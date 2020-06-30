@@ -1,0 +1,23 @@
+.ptitulos {
+    text-align: center;
+}
+
+.pdescripcion {
+    margin: 10px;
+}
+
+.mtitulo {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.bloques {
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+
+.bloquetec {
+    display: block;
+    width: 100%;
+}

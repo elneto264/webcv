@@ -1,0 +1,34 @@
+<app-cabezera></app-cabezera>
+<div class="container">
+    <app-aboutme></app-aboutme>
+    <hr>
+    <h2 class="mtitulo">Proyectos realizados</h2>
+    <div class="row">
+        <div class="col-xs-7 col-md-7 col-lg-7">
+            <section>
+                <h4 class="ptitulos">Proyecto api de clima con ajax</h4>
+                <app-clima></app-clima>
+                <p class="pdescripcion">Practica realizada para hacer llamada a una API mediante Ajax para mostrar los datos climaticos de diferentes ciudades</p>
+            </section>
+            <hr>
+            <section>
+                <h4 class="ptitulos">Proyecto ruleta con JS</h4>
+                <app-ruleta></app-ruleta>
+                <p class="pdescripcion">Practica realizada para hacer un algoritmo que elija de manera aleatoria un nombre de un Array de elementos</p>
+            </section>
+        </div>
+        <div class="col-xs-5 col-md-5 col-lg-5">
+            <section class="bloquetec">
+                <h4 class="ptitulos">Tecnologias</h4>
+                <app-tecnologias></app-tecnologias>
+            </section>
+            <section class="bloques">
+                <app-timeline [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
+                </app-timeline>
+            </section>
+            <hr>
+
+        </div>
+    </div>
+    <hr>
+</div>

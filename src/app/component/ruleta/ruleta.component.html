@@ -1,0 +1,50 @@
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+<section class="container .cuerpo" [ngStyle]="{backgroundImage:'url(assets/img/fondo1.png)'}">
+
+
+
+    <div class="row mx-auto d-block">
+        <div class="col-xs-12 col-md-12 col-lg-12 sorteo">
+            <div id="borde">
+                <h2 id="titulo1">SORTEO DE PILDORAS</h2>
+                <div id="numero"></div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-xs-6 col-md-6 col-lg-6 boton1">
+
+            <input class="boton boton1" type="button" value="START" (click)='nrandom()'>
+
+        </div>
+
+
+        <div class="col-xs-6 col-md-6 col-lg-6 boton2 ">
+
+            <input class="boton boton2" type="button" value="RESET" (click)='reinicio()'>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-md-12 col-lg-12 pacman">
+            <div class="pacman-top"></div>
+            <div class="pacman-bottom"></div>
+            <div class="feed"></div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<script type="text/javascript" src="assets/js/wheel.js"></script>

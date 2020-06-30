@@ -1,0 +1,19 @@
+<h4 class="etitulo">Experiencia Laboral </h4>
+<div class="timeline-flow-wrapper">
+    <div class="step edge-step" *ngIf="topEdge">
+        <div class="pipe-wrapper">
+            <span class="pipe"></span>
+        </div>
+        <div class="status-text"></div>
+    </div>
+    <div class="step" *ngFor="let step of data; let i=index" [ngClass]="{'edge-step': i === data.length-1 &amp;&amp; bottomEdge}">
+        <div class="pipe-wrapper">
+            <span class="pipe" [ngStyle]="getStyles(step, 'pipe-styles')"></span>
+            <span class="status-icon" [ngClass]="getStyles(step, 'icon-class')" [ngStyle]="getStyles(step, 'icon-styles')"></span>
+        </div>
+        <div class="status-text" [ngStyle]="getStyles(step, 'text-styles')">
+            <div class="title">{{step.step}}</div>
+            <div class="sub-title" *ngIf="step.subtext">{{step.subtext}}</div>
+        </div>
+    </div>
+</div>

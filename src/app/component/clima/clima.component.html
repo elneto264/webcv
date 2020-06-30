@@ -1,0 +1,138 @@
+<section class="fondor">
+
+    <section class="container-fluid" id="cabezera">
+
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+
+                <select class="form-control" name="ciudades" id="ciudades">
+                  <option value="3117732">Madrid</option>
+                  <option value="524901">Moscú</option>
+                  <option value="1609350">Bangkok</option>
+                  <option value="2172517">Canberra</option>
+                  <option value="1261481">New Delhi</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="cdatos" class="container cdatos">
+        <!--CIUDAD, DIA Y TIEMPO ACTUAL-->
+
+        <div class="row datosactual">
+            <div class="col-xs-6 col-md-6 col-lg-6 cprincipal">
+                <div class="infoprin">
+
+                    <div class="tempactual">
+                        <h3 id="tipodia"></h3>
+                        <h2 id="mainTemp"></h2>
+                        <h4 id="maxMin"></h4>
+
+
+                    </div>
+
+                    <img id="imgcurrent" src="" alt="Weather icon" class="imgcurrent">
+                    <h4 id="name"></h4>
+                    <h6 id="day"></h6>
+                    <h6 id="date"></h6>
+                </div>
+
+
+                <input type="image" id="refresh" class="refrescar sarrow" name="refrescar" src="assets/img/arrow2.png" alt="arroes">
+
+
+            </div>
+
+            <div class="col-xs-6 col-md-6 col-lg-6 detallesActual">
+                <table class="table table-striped detallesActual">
+                    <tbody class="detallesActual">
+                        <th style="border-top:none;">Información adicional </th>
+                        <tr>
+                            <td>Velocidad Viento<br>
+                                <h6 id="wind"></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nubes<br>
+                                <h6 id="cloud"></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Volumen lluvia<br>
+                                <h6 id="rain"></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Volumen nieve<br>
+                                <h6 id="snow"></h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container secDatos">
+        <div class="row">
+            <div class="col-xs-2 col-md-2 col-lg-2 pronostico2">
+
+                <h6>Pronóstico para los próximos días</h6>
+
+            </div>
+
+            <div class="col-xs-2 col-md-2 col-lg-2 cincodias">
+                <h4 id="forecastDay1"></h4>
+                <img src="" class="imgdias" id="imgdias1" alt="tiempo">
+                <h6 id="maxMinDia1"></h6>
+            </div>
+
+            <div class="col-xs-2 col-md-2 col-lg-2 cincodias">
+                <h4 id="forecastDay2"></h4>
+                <img src="" class="imgdias" id="imgdias2" alt="tiempo">
+                <h6 id="maxMinDia2"></h6>
+            </div>
+
+            <div class="col-xs-2 col-md-2 col-lg-2 cincodias">
+                <h4 id="forecastDay3"></h4>
+                <img src="" class="imgdias" id="imgdias3" alt="tiempo">
+                <h6 id="maxMinDia3"></h6>
+            </div>
+
+            <div class="col-xs-2 col-md-2 col-lg-2 cincodias">
+                <h4 id="forecastDay4"></h4>
+                <img src="" class="imgdias" id="imgdias4" alt="tiempo">
+                <h6 id="maxMinDia4"></h6>
+            </div>
+
+            <div class="col-xs-2 col-md-2 col-lg-2 cincodias">
+                <h4 id="forecastDay5"></h4>
+                <img src="" class="imgdias" id="imgdias5" alt="tiempo">
+                <h6 id="maxMinDia5"></h6>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <footer class="container-fluid piedepagina">
+
+
+    </footer>
+
+</section>
+
+<script type="text/javascript" src="assets/js/moment.js"></script>
+
+<script src="assets/js/sprint5.js"></script>
