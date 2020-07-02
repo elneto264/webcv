@@ -88,7 +88,7 @@ function infogen() {
                 console.log(result);
                 $("#name").html(ciudad + " <style>#name {font-size: 5vh};</style>");
                 $("#oc").attr("value", result.id);
-                $("#mainTemp").html(Math.round(result.main.temp) + "<style>#mainTemp {font-size: 6vh};</style> ºC");
+                $("#mainTemp").html(Math.round(result.main.temp) + "<style>#mainTemp {font-size: 7vh};</style> ºC");
                 $("#maxMin").html(Math.round(result.main.temp_max) + " ºC" + " / " + Math.round(result.main.temp_min) + " ºC");
                 $("#wind").html(result.wind.speed + " m/s");
                 $("#cloud").html(result.clouds.all + " %");

@@ -17,7 +17,7 @@ export class AppComponent {
   }, {
     step: '2020 – 2020 // Intern. • LetMePark. • Madrid. ',
     subtext: 'Full time intern, working on the current parking platform in front end and back end.',
-    status: 'In progress'
+    status: 'Completed'
   }, {
     step: '2016 – 2019 // Coordinador. • Atmosphere Living. S.L. • Madrid.',
     subtext: 'Coordinación de un equipo de tres personas en los departamentos de marketing y mantenimiento.',
