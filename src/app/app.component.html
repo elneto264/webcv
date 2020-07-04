@@ -6,29 +6,61 @@
     <div class="row">
         <div class="col-xs-7 col-md-7 col-lg-7">
             <section>
-                <h4 class="ptitulos">Proyecto api de clima con ajax</h4>
+                <h3 class="ptitulos">Proyecto api de clima con ajax</h3>
                 <app-clima></app-clima>
-                <p class="pdescripcion">Practica realizada para hacer llamada a una API mediante Ajax para mostrar los datos climaticos de diferentes ciudades</p>
+                <div class="card prodes">
+                    <div class="card-body">
+                        <h2><b>Descripcion del proyecto:</b></h2>
+                        <ul>
+                            <li>
+                                <p class="pdescripcion">Practica realizada para hacer llamada a una API mediante Ajax para mostrar los datos climaticos de diferentes ciudades</p>
+                            </li>
+                            <li>Tecnologias usadas: Html5, CSS3, JavaScript, jQuery y Ajax.
+
+                            </li>
+                            <!-- <li>
+                                Metodologia:
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
             </section>
             <hr>
             <section>
-                <h4 class="ptitulos">Proyecto ruleta con JS</h4>
+                <h3 class="ptitulos">Proyecto ruleta con JS</h3>
                 <app-ruleta></app-ruleta>
-                <p class="pdescripcion">Practica realizada para hacer un algoritmo que elija de manera aleatoria un nombre de un Array de elementos</p>
+                <div class="card prodes">
+                    <div class="card-body">
+                        <h2><b>Descripcion del proyecto:</b></h2>
+                        <ul>
+                            <li>
+                                <p class="pdescripcion">Descripcion del proyecto: <br>Practica realizada para hacer un algoritmo que elija de manera aleatoria un nombre de un Array de elementos.</p>
+                            </li>
+                            <li>Tecnologias usadas: Html5, CSS3, JavaScript.</li>
+                            <!-- <li>
+                                Metodologia:
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
             </section>
         </div>
         <div class="col-xs-5 col-md-5 col-lg-5">
             <section class="bloquetec">
-                <h4 class="ptitulos">Tecnologias</h4>
+                <h3 class="ptitulos">Tecnologias</h3>
                 <app-tecnologias></app-tecnologias>
             </section>
-            <section class="bloques">
+            <hr>
+            <section class="bloques time">
                 <app-timeline [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
                 </app-timeline>
             </section>
             <hr>
-
+            <section class="bloques">
+                <br>
+                <h3 class="ptitulos">Formación</h3>
+                <app-formacion></app-formacion>
+            </section>
         </div>
     </div>
-    <hr>
 </div>

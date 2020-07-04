@@ -13,6 +13,7 @@ import { RuletaComponent } from './component/ruleta/ruleta.component';
 import { TecnologiasComponent } from './component/tecnologias/tecnologias.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { FormacionComponent } from './component/formacion/formacion.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     ClimaComponent,
     RuletaComponent,
     TecnologiasComponent,
+    FormacionComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [

@@ -1,5 +1,6 @@
 .ptitulos {
     text-align: center;
+    font-weight: bold;
 }
 
 .pdescripcion {
@@ -15,4 +16,17 @@
     display: block;
     width: 100%;
     position: absolute;
+}
+
+.infopro {
+    margin-top: 10px;
+}
+
+.prodes {
+    margin-top: 10px;
+}
+
+.time {
+    display: flex;
+    position: relative;
 }
