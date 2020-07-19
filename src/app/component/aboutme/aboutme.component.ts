@@ -26,18 +26,19 @@ export class AboutmeComponent implements OnInit {
     status: 'Not Started'
   }, {
     step: '2020 – 2020 // Intern. • LetMePark. • Madrid. ',
-    subtext: 'Full time intern, working on the current parking platform in front end and back end.',
+    subtext: 'Intern de jornada completa, trabajando en la actual plataforma de parkings tanto en front end como en back end.',
     status: 'Completed'
   }, {
     step: '2016 – 2019 // Coordinador. • Atmosphere Living. S.L. • Madrid.',
-    subtext: 'Coordinación de un equipo de tres personas en los departamentos de marketing y mantenimiento.',
+    subtext: '-Coordinación de un equipo de tres personas en los departamentos de marketing y mantenimiento. Contacto con plataformas de gestión de inmuebles, contacto con clientes, ubicación de los inmuebles en medios digitales, estrategias de colaboración de coworking, coordinación del equipo, diseño gráfico, optimización del estado de los inmuebles, gestión de emergencias, contacto con contratistas para mejoras o reparación.o.',
     status: 'Completed'
   }, {
     step: '2015 – 2016 // Diseñador Gráfico • Embabia S.L. • Madrid. ',
     subtext: 'Creación de artes para los diferentes bares y restaurantes que posee la empresa.',
     status: 'Completed'
   }, {
-    step: '2014-2014 // Intern • Infocarto • Madrid.',
+    step: '2014 - 2014 // Intern • Infocarto • Madrid.',
+    subtext: '-Creación de contenidos, SEO y SEM en páginas web de la empresa. Diseño de boletín de noticias y google AdWords.',
     status: 'Completed'
   }, {
     step: '¡HOLA MADRID!',
