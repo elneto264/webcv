@@ -1,0 +1,14 @@
+.mtitulo {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 5px;
+}
+
+.ptitulos {
+    text-align: center;
+    font-weight: bold;
+}
+
+.pdescripcion {
+    margin: 10px;
+}

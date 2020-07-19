@@ -19,6 +19,45 @@
 }
 
 
+/* estilos textos*/
+
+.ptitulos {
+    text-align: center;
+    font-weight: bold;
+}
+
+.pdescripcion {
+    margin: 10px;
+}
+
+.mtitulo {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.bloques {
+    display: block;
+    width: 100%;
+}
+
+.infopro {
+    margin-top: 10px;
+}
+
+.prodes {
+    margin-top: 10px;
+}
+
+.time {
+    display: flex;
+}
+
+.bloquetec {
+    display: block;
+    position: relative;
+}
+
+
 /* timeline */
 
 a {

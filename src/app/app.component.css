@@ -15,7 +15,6 @@
 .bloques {
     display: block;
     width: 100%;
-    position: absolute;
 }
 
 .infopro {
@@ -28,5 +27,10 @@
 
 .time {
     display: flex;
+}
+
+.bloquetec {
+    display: block;
     position: relative;
+    border: 1px solid black;
 }

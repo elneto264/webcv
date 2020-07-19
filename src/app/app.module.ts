@@ -4,6 +4,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 
+
 import { AppComponent } from './app.component';
 import { CabezeraComponent } from './component/cabezera/cabezera.component';
 import { AboutmeComponent } from './component/aboutme/aboutme.component';
@@ -14,6 +15,9 @@ import { TecnologiasComponent } from './component/tecnologias/tecnologias.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FormacionComponent } from './component/formacion/formacion.component';
+import { PedagogicoComponent } from './component/pedagogico/pedagogico.component';
+import { TrabajosComponent } from './component/trabajos/trabajos.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,15 @@ import { FormacionComponent } from './component/formacion/formacion.component';
     RuletaComponent,
     TecnologiasComponent,
     FormacionComponent,
+    PedagogicoComponent,
+    TrabajosComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
+    AppRoutingModule,
 
   ],
   providers: [],

@@ -1,26 +1,53 @@
-<h1>Tempus fugit Carpe Diem!</h1>
-<div class="row">
-    <div class="col-xs-6 col-md-6 col-lg-6 introtext">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="assets/img/bocetogroot.jpg" class="card-img yoimg" alt="imagen personal">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollador web | Publicista </h5>
-                        <p class="card-text">Un inmigrante del area de publicidad a desarrollo, siempre haciendo scroll hacia abajo o pasando paginas hacia la izquierda.</p>
-                        <p class="card-text"><small class="text-muted">Always Beta!</small></p>
+<app-cabezera></app-cabezera>
+<div class="container">
+    <h1>Tempus fugit Carpe Diem!</h1>
+    <div class="row">
+        <div class="col-xs-6 col-md-6 col-lg-6 introtext">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="assets/img/bocetogroot.jpg" class="card-img yoimg" alt="imagen personal">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollador web | Publicista </h5>
+                            <p class="card-text">Un inmigrante del area de publicidad a desarrollo, siempre haciendo scroll hacia abajo o pasando paginas hacia la izquierda.</p>
+                            <p class="card-text"><small class="text-muted">Always Beta!</small></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-xs-6 col-md-6 col-lg-6 introtext">
+            <h1>¡Hola!</h1>
+            <p> Mi nombre es Ernesto Silva Languasco, soy un dominicano más por Europa, estudie publicidad como carrera universitaria enfocado en la creación de contenido y estrategia de marketing, hace un tiempo tome la decisión de entrar al mundo de la
+                programación web, siempre me ha gustado la tecnología y decidí darle un intento y el resultado es esta pagina que pueden observar, me gusta la programación web. <br><br>Mi deseo es ser un programador Full Stack, entiendo que es un buen
+                equilibrio para poder ofrecer un buen servicio como profesional ya que se maneja tanto el Front-End como el Back-End. Al momento de trabajar en un proyecto nuevo se tiene una mejor visión de como comenzar, herramientas a usar, metodología
+                y personal.
+            </p>
+        </div>
     </div>
-    <div class="col-xs-6 col-md-6 col-lg-6 introtext">
-        <h1>¡Hola!</h1>
-        <p> Mi nombre es Ernesto Silva Languasco, soy un dominicano más por Europa, estudie publicidad como carrera universitaria enfocado en la creación de contenido y estrategia de marketing, hace un tiempo tome la decisión de entrar al mundo de la programación
-            web, siempre me ha gustado la tecnología y decidí darle un intento y el resultado es esta pagina que pueden observar, me gusta la programación web. <br><br>Mi deseo es ser un programador Full Stack, entiendo que es un buen equilibrio para
-            poder ofrecer un buen servicio como profesional ya que se maneja tanto el Front-End como el Back-End. Al momento de trabajar en un proyecto nuevo se tiene una mejor visión de como comenzar, herramientas a usar, metodología y personal.
-        </p>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+            <h3 class="ptitulos">Experiencia Laboral</h3>
+            <section class="bloques time">
+                <br>
+                <app-timeline [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
+                </app-timeline>
+            </section>
+            <hr>
+            <section class="bloques">
+                <br>
+                <h3 class="ptitulos">Formación</h3>
+                <app-formacion></app-formacion>
+            </section>
+            <hr>
+            <section class="bloquetec">
+                <h3 class="ptitulos">Tecnologias</h3>
+                <app-tecnologias></app-tecnologias>
+            </section>
+
+        </div>
     </div>
 </div>
