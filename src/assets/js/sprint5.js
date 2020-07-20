@@ -43,7 +43,7 @@ function infogen() {
 
 
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?id=" + city + "&lang=sp&units=metric&APPID=6967c0545bc9b2c52b54e1fd9e453d42",
+            url: "https://api.openweathermap.org/data/2.5/weather?id=" + city + "&lang=sp&units=metric&APPID=6967c0545bc9b2c52b54e1fd9e453d42",
             datatype: "json",
             type: "GET",
             success: function(result) {
