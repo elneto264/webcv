@@ -14,3 +14,18 @@
     margin-right: 7px;
     font-family: 'Noto Sans TC', sans-serif;
 }
+
+.barstat {
+    margin-top: 0.5em;
+    padding: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.barstat p {
+    color: white;
+    margin-top: 0.3em;
+    margin-left: 0.2em;
+    padding: 4px;
+}
