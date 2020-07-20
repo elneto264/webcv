@@ -12,11 +12,14 @@ import { RuletaComponent } from './component/ruleta/ruleta.component';
 import { TecnologiasComponent } from './component/tecnologias/tecnologias.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { TooltipModule } from '@syncfusion/ej2-angular-popups';
 import { FormacionComponent } from './component/formacion/formacion.component';
 import { PedagogicoComponent } from './component/pedagogico/pedagogico.component';
 import { TrabajosComponent } from './component/trabajos/trabajos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactoComponent } from './component/contacto/contacto.component';
+import { NotfoundComponent } from './component/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +34,16 @@ import { ContactoComponent } from './component/contacto/contacto.component';
     PedagogicoComponent,
     TrabajosComponent,
     ContactoComponent,
+    NotfoundComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
+    MatProgressSpinnerModule,
     AppRoutingModule,
+    TooltipModule,
 
   ],
   providers: [],
