@@ -19,6 +19,7 @@ import { PedagogicoComponent } from './component/pedagogico/pedagogico.component
 import { TrabajosComponent } from './component/trabajos/trabajos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactoComponent } from './component/contacto/contacto.component';
+import { NotfoundComponent } from './component/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ContactoComponent } from './component/contacto/contacto.component';
     PedagogicoComponent,
     TrabajosComponent,
     ContactoComponent,
+    NotfoundComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
