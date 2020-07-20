@@ -3,8 +3,6 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 
-
-
 import { AppComponent } from './app.component';
 import { CabezeraComponent } from './component/cabezera/cabezera.component';
 import { AboutmeComponent } from './component/aboutme/aboutme.component';
@@ -18,6 +16,7 @@ import { FormacionComponent } from './component/formacion/formacion.component';
 import { PedagogicoComponent } from './component/pedagogico/pedagogico.component';
 import { TrabajosComponent } from './component/trabajos/trabajos.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ContactoComponent } from './component/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
     FormacionComponent,
     PedagogicoComponent,
     TrabajosComponent,
+    ContactoComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [

@@ -1,0 +1,18 @@
+.maincon {
+    padding-top: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.listadocon {
+    list-style: none;
+}
+
+.listadocon li {
+    padding: 5px;
+}
+
+.iconta {
+    text-align: center;
+    font-size: 10em;
+}

@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, NgModule } from '@angular/core';
 import { faTwitter, faFacebook, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { StepsData,StatusConfig } from '../timeline/timeline.component';
+import { StepsData, StatusConfig } from './component/timeline/timeline-flow.options';
+
+
 
 
 
