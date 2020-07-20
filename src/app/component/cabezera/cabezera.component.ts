@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class CabezeraComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {

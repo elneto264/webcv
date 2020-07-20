@@ -3,6 +3,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 html,
 body {
     height: 100%;
