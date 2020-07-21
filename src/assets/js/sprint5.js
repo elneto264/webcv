@@ -116,7 +116,7 @@ function infogen() {
 
         /* 2ndo ajax */
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/forecast?id=" + city + "&lang=sp&APPID=6967c0545bc9b2c52b54e1fd9e453d42&units=metric",
+            url: "https://api.openweathermap.org/data/2.5/forecast?id=" + city + "&lang=sp&APPID=6967c0545bc9b2c52b54e1fd9e453d42&units=metric",
             datatype: "json",
             type: "GET",
             success: function(forecast) {
