@@ -1,4 +1,4 @@
-<ul class="nav justify-content-center cabeza">
+<!-- <ul class="nav justify-content-center cabeza">
     <li class="nav-item">
         <a class="btn btn-dark bts" routerLink="/aboutme" role="button">Inicio</a>
     </li>
@@ -12,6 +12,27 @@
         <ejs-tooltip id="estado" content="Progreso actual de la web" position="RightCenter">
             <mat-progress-spinner mode="determinate" value="40" diameter="40"></mat-progress-spinner>
         </ejs-tooltip>
-        <!-- <p id="estado"> Progreso actual de la web</p> -->
+        <p id="estado"> Progreso actual de la web</p> 
     </li>
-</ul>
+</ul> -->
+
+<mat-toolbar class="custom-toolbar">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon class="custom-icon">menu</mat-icon>
+        </button>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items ">
+            <li class="nav-item">
+                <a class="btn btn-dark bts" routerLink="/aboutme" role="button">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-dark bts" routerLink="/trabajos" role="button">Portafolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-dark bts" routerLink="/contacto" role="button">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>

@@ -20,6 +20,11 @@ import { TrabajosComponent } from './component/trabajos/trabajos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactoComponent } from './component/contacto/contacto.component';
 import { NotfoundComponent } from './component/notfound/notfound.component';
+import { MaterialModule } from './material/material.module';
+import { LayoutComponent } from './layout/layout.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidenavListComponent } from './component/sidenav-list/sidenav-list.component';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +40,8 @@ import { NotfoundComponent } from './component/notfound/notfound.component';
     TrabajosComponent,
     ContactoComponent,
     NotfoundComponent,
+    LayoutComponent,
+    SidenavListComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
@@ -44,6 +51,8 @@ import { NotfoundComponent } from './component/notfound/notfound.component';
     MatProgressSpinnerModule,
     AppRoutingModule,
     TooltipModule,
+    MaterialModule,
+    FlexLayoutModule,
 
   ],
   providers: [],
