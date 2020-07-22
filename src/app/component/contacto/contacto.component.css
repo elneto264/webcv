@@ -5,7 +5,10 @@
 }
 
 .listadocon {
+    display: inline-block;
+    justify-content: center;
     list-style: none;
+    margin-left: -2em;
 }
 
 .listadocon li {
@@ -14,5 +17,9 @@
 
 .iconta {
     text-align: center;
-    font-size: 10em;
+    font-size: 5em;
+}
+
+.imgside {
+    width: 20%;
 }
