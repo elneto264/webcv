@@ -1,6 +1,6 @@
 .cabeza {
     background-color: black;
-    height: auto;
+    height: 100%;
     padding: 4px;
     position: fixed;
     z-index: 10;

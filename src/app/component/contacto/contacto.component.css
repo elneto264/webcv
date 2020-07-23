@@ -1,7 +1,9 @@
 .maincon {
-    padding-top: 70px;
+    padding-top: 80px;
+    margin-top: -10px;
     width: 100%;
     text-align: center;
+    background-color: white;
 }
 
 .listadocon {

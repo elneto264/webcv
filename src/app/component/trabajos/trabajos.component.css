@@ -12,3 +12,9 @@
 .pdescripcion {
     margin: 10px;
 }
+
+.fon {
+    margin-top: -10px;
+    background-color: white;
+    height: 100%;
+}
