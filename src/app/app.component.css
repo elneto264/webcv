@@ -1,3 +1,6 @@
+*{
+    font-family: 'Spartan', sans-serif;
+}
 .ptitulos {
     text-align: center;
     font-weight: bold;
@@ -51,6 +54,7 @@ mat-sidenav {
 main {
     padding: 45px;
 }
+
 
 
 /* .fon {

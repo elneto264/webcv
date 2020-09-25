@@ -28,6 +28,12 @@
     font-style: italic;
 }
 
+.coverimg{
+margin-top: 2em;
+background-size: cover;
+width: 100%;
+z-index: 3;
+}
 
 /* estilos textos*/
 

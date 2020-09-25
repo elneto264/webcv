@@ -1,5 +1,5 @@
 .cabeza {
-    background-color: black;
+    background-color: #21afcc;
     height: 100%;
     padding: 4px;
     position: fixed;
@@ -47,7 +47,7 @@ a {
 
 a:hover,
 a:active {
-    color: lightgray;
+    color: black;
 }
 
 .navigation-items {
@@ -61,7 +61,7 @@ mat-toolbar {
 }
 
 .custom-toolbar {
-    background-color: black;
+    background-color: #21afcc;
     z-index: 3;
     position: fixed;
 }
