@@ -57,7 +57,8 @@ a:active {
 }
 
 mat-toolbar {
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    box-shadow: 0px 4px 6px -5px rgba(0, 0, 0, 0.79);
 }
 
 .custom-toolbar {

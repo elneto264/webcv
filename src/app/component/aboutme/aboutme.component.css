@@ -66,7 +66,11 @@ z-index: 3;
 
 .time {
     display: flex;
+    /* background-color:lightgrey; */
 }
+/* .filatime{
+background-color: lightskyblue;
+} */
 
 .bloquetec {
     display: block;

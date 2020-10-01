@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover,
@@ -14,5 +14,5 @@ a:active {
 }
 
 mat-nav-list a {
-    color: white;
+    color: black;
 }
