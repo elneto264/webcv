@@ -24,6 +24,7 @@ import { MaterialModule } from './material/material.module';
 import { LayoutComponent } from './layout/layout.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavListComponent } from './component/sidenav-list/sidenav-list.component';
+import { MatCardModule } from "@angular/material/card";
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { SidenavListComponent } from './component/sidenav-list/sidenav-list.comp
     TooltipModule,
     MaterialModule,
     FlexLayoutModule,
+    MatCardModule
 
   ],
   providers: [],
