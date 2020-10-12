@@ -67,6 +67,7 @@ z-index: 3;
 
 .time {
     display: flex;
+    justify-content: center;
     /* background-color:lightgrey; */
 }
 /* .filatime{

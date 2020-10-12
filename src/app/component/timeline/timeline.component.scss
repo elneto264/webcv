@@ -1,75 +1,152 @@
-$contrastGrey: #c8c8c8;
-.timeline-flow-wrapper {
-    width: inherit;
+// $contrastGrey: #c8c8c8;
+// .timeline-flow-wrapper {
+//     width: inherit;
+//     display: inline-block;
+//     padding-left: 20px;
+//     padding-top: 10px;
+//     .step {
+//         display: grid;
+//         grid-template-columns: auto 1fr;
+//         min-height: 70px;
+//         .pipe-wrapper {
+//             position: relative;
+//             padding-right: 15px;
+//             .pipe {
+//                 position: absolute;
+//                 left: 5px;
+//                 top: 10px;
+//                 width: 10px;
+//                 border-radius: 3px;
+//                 height: 100%;
+//                 background-color: #ccc;
+//                 z-index: 1;
+//             }
+//             .status-icon {
+//                 position: relative;
+//                 z-index: 2;
+//                 top: 2px;
+//                 background-color: #fff;
+//                 border-radius: 50%;
+//                 width: 22px;
+//                 height: 22px;
+//                 &::before {
+//                     font-size: 22px;
+//                     position: relative;
+//                     left: 1px;
+//                 }
+//             }
+//         }
+//         .status-text {
+//             padding-left: 1em;
+//             padding-bottom: 25px;
+//             .title {
+//                 font-size: 1.4rem;
+//                 font-weight: bold;
+//             }
+//             .sub-title {
+//                 font-size: 1rem;
+//                 color:black;
+//                 font-weight: bold;
+//             }
+//         }
+//         &:last-child {
+//             .pipe-wrapper {
+//                 .pipe {
+//                     display: none;
+//                 }
+//             }
+//         }
+//         &.edge-step {
+//             min-height: 30px;
+//         }
+//         &:last-child {
+//             min-height: auto;
+//             .status-text {
+//                 padding-bottom: 10px;
+//             }
+//             &.edge-step {
+//                 margin-bottom: 30px;
+//                 .pipe-wrapper .pipe {
+//                     display: inherit;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #21afcc;
     display: inline-block;
-    padding-left: 20px;
-    padding-top: 10px;
-    .step {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        min-height: 70px;
-        .pipe-wrapper {
-            position: relative;
-            padding-right: 15px;
-            .pipe {
-                position: absolute;
-                left: 5px;
-                top: 10px;
-                width: 10px;
-                border-radius: 3px;
-                height: 100%;
-                background-color: #ccc;
-                z-index: 1;
-            }
-            .status-icon {
-                position: relative;
-                z-index: 2;
-                top: 2px;
-                background-color: #fff;
-                border-radius: 50%;
-                width: 22px;
-                height: 22px;
-                &::before {
-                    font-size: 22px;
-                    position: relative;
-                    left: 1px;
-                }
-            }
-        }
-        .status-text {
-            padding-left: 1em;
-            padding-bottom: 25px;
-            .title {
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
-            .sub-title {
-                font-size: 1rem;
-                color:black;
-                font-weight: bold;
-            }
-        }
-        &:last-child {
-            .pipe-wrapper {
-                .pipe {
-                    display: none;
-                }
-            }
-        }
-        &.edge-step {
-            min-height: 30px;
-        }
-        &:last-child {
-            min-height: auto;
-            .status-text {
-                padding-bottom: 10px;
-            }
-            &.edge-step {
-                margin-bottom: 30px;
-                .pipe-wrapper .pipe {
-                    display: inherit;
-                }
-            }
-        }
-    }
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    background: #E8CBC0;
+    background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
+    background: linear-gradient(to right, #E8CBC0, #636FA4);
+    min-height: 100vh;
+}
+
+.text-gray {
+    color: #999;
 }

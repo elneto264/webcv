@@ -10,10 +10,10 @@ import {
   animateChild
 } from '@angular/animations';
 import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
 
 
-declare let gtag: Function;
+
+
 
 
 
@@ -58,7 +58,7 @@ export class AppComponent {
     status: 'Completed'
   }, {
     step: '2016 – 2019 | Coordinador. • Atmosphere Living. S.L. • Madrid.',
-    subtext: '-Coordinación de un equipo de tres personas en los departamentos de marketing y mantenimiento.<br> -Contacto con plataformas de gestión de inmuebles, contacto con clientes, ubicación de los inmuebles en medios digitales, estrategias de colaboración de coworking, coordinación del equipo, diseño gráfico, optimización del estado de los inmuebles, gestión de emergencias, contacto con contratistas para mejoras o reparación.',
+    subtext: '-Coordinación de un equipo de tres personas en los departamentos de marketing y mantenimiento.-Contacto con plataformas de gestión de inmuebles, contacto con clientes, ubicación de los inmuebles en medios digitales, estrategias de colaboración de coworking, coordinación del equipo, diseño gráfico, optimización del estado de los inmuebles, gestión de emergencias, contacto con contratistas para mejoras.',
     status: 'Completed'
   }, {
     step: '2015 – 2016 | Diseñador Gráfico • Embabia S.L. • Madrid. ',
@@ -112,18 +112,6 @@ export class AppComponent {
     status: 'Pending'
   }];
 
-  constructor( public router: Router){
-    
-    this.router.events.subscribe(event => {
-      if(event instanceof NavigationEnd){
-          gtag('config', 'G-KTMN8HVTRM', 
-                {
-                  'page_path': event.urlAfterRedirects
-                }
-               );
 
-  }
-}
-)}
 
 }
