@@ -4,7 +4,7 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet"> 
-<app-cabezera (sidenavToggle)="sidenav.toggle()"></app-cabezera>
+        <app-cabezera (sidenavToggle)="sidenav.toggle()"></app-cabezera>
         <main>
             <div [@myAnimation]="o.isActivated ? o.activatedRoute : ''">
                 <router-outlet #o="outlet"></router-outlet>
