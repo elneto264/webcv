@@ -9,6 +9,13 @@ import {
   group,
   animateChild
 } from '@angular/animations';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+
+
+declare let gtag: Function;
+
+
 
 
 @Component({
@@ -39,6 +46,7 @@ import {
 })
 export class AppComponent {
   title = 'portfolio';
+
 
   statusData: StepsData[] = [{
     step: '????',
@@ -103,4 +111,19 @@ export class AppComponent {
     step: 'Step 6',
     status: 'Pending'
   }];
+
+  constructor( public router: Router){
+    
+    this.router.events.subscribe(event => {
+      if(event instanceof NavigationEnd){
+          gtag('config', 'G-KTMN8HVTRM', 
+                {
+                  'page_path': event.urlAfterRedirects
+                }
+               );
+
+  }
+}
+)}
+
 }
