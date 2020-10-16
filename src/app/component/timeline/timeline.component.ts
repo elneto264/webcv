@@ -4,7 +4,8 @@ import { DEFAULT_STATUS_VALUES, StepsData, StatusConfig } from './timeline-flow.
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.scss']
+  styleUrls: ['./timeline.component.scss'],
+  
 })
 export class TimelineComponent {
 

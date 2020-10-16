@@ -1,13 +1,34 @@
-<div class="container-fluid">
+
+<!-- <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12">
-            <img src="assets/img/IMG_4472.jpg"  class="img-fluid coverimg" alt="imagen">
-        </div>
+            <div class="caja">
+                <div class="coffee-header">
+                <div class="coffee-header__buttons coffee-header__button-one"></div>
+                <div class="coffee-header__buttons coffee-header__button-two"></div>
+                <div class="coffee-header__display"></div>
+                <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                <div class="coffe-medium__exit"></div>
+                <div class="coffee-medium__arm"></div>
+                <div class="coffee-medium__liquid"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </div> 
     </div>
-</div>
+</div> -->
+
+                            
 <div class="container fon">
     <div class="row">
-        <div class="col-xs-6 col-md-6 col-lg-6 textbox">
+        <div class="col-xs-6 col-md-6 col-lg-6 textbox fade-in-left">
             <div class="descptxt" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -23,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-6 col-md-6 col-lg-6 introtext">
+        <div class="col-xs-6 col-md-6 col-lg-6 introtext fade-in-right">
             <h1>¡Hola!</h1>
             <p> Mi nombre es Ernesto Silva Languasco. Estudié publicidad como carrera universitaria enfocado en la creación de contenido y estrategia de marketing.
                 <br><br>Desde hace un tiempo entré al mundo de la programación web, pues siempre me ha gustado la tecnología y la comunicación. El resultado es esta página. Aspiro a ser un programador <b>Full Stack</b>, ya que es un buen equilibrio para
@@ -38,22 +59,51 @@
             <h3 class="ptitulos">Experiencia Laboral</h3>
             <section class="bloques time">
                 <br>
-                <app-timeline [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
+                <app-timeline  [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
                 </app-timeline>
             </section>
             <hr>
             
-            <section class="bloques">
+            <section class="bloques fade-in">
                 <br>
                 <h3 class="ptitulos">Formación</h3>
-                <app-formacion></app-formacion>
+                <app-formacion class="fade-in"></app-formacion>
             </section>
             <hr>
             <section class="bloquetec">
                 <h3 class="ptitulos">Dominio de Tecnologias</h3>
-                <app-tecnologias></app-tecnologias>
+                <app-tecnologias class="fade-in"></app-tecnologias>
             </section>
 
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+<script>
+    $(window).scroll(function () {
+
+/* Check the location of each desired element */
+$('.fade-in').each(function (i) {
+
+var bottom_of_object = $(this).position().top + $(this).outerHeight();
+var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+/* If the object is completely visible in the window, fade it it */
+if (bottom_of_window > bottom_of_object) {
+
+    $(this).animate({
+        'opacity': '1'
+    }, 500);
+
+}
+
+});
+
+});
+</script>

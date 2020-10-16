@@ -1,9 +1,9 @@
-<div class="container fon">
+<div class="container fon fade-in">
     <h2 class="mtitulo">Proyectos realizados</h2>
     <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12">
             <section>
-                <h3 class="ptitulos">Proyecto api de clima con ajax</h3>
+                <h3 class="ptitulos">Api Open Weather</h3>
                 <app-clima></app-clima>
                 <div class="card prodes">
                     <div class="card-body">
@@ -28,7 +28,7 @@
             </section>
             <hr>
             <section>
-                <h3 class="ptitulos">Proyecto ruleta con JS</h3>
+                <h3 class="ptitulos">Seleccion aleatoria con JS</h3>
                 <app-ruleta></app-ruleta>
                 <div class="card prodes">
                     <div class="card-body">
@@ -80,3 +80,28 @@
         </div>
     </div>
 </div>
+
+
+
+<script>
+    $(window).scroll(function () {
+
+/* Check the location of each desired element */
+$('.fade-in').each(function (i) {
+
+var bottom_of_object = $(this).position().top + $(this).outerHeight();
+var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+/* If the object is completely visible in the window, fade it it */
+if (bottom_of_window > bottom_of_object) {
+
+    $(this).animate({
+        'opacity': '1'
+    }, 500);
+
+}
+
+});
+
+});
+</script>

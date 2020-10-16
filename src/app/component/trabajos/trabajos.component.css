@@ -22,3 +22,25 @@
 .prodes {
     margin-top: 1em;
 }
+
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+
+
+ .fade-in {
+	animation: fade-in 1.2s ease-in both;
+}
+
+ @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
