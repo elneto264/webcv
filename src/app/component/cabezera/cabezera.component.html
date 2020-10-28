@@ -23,15 +23,23 @@
         </button>
     </div>
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-        <ul fxLayout fxLayoutGap="15px" class="navigation-items ">
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li class="nav-item">
-                <a class="btn  bts" routerLink="/aboutme" role="button">Inicio</a>
+                <select class="custom-select sel" >
+                    <!-- <option selected>Lang</option> -->
+                    <option value="en" (click)="useLanguage('en')" >🇬🇧</option>
+                    <option value="de" (click)="useLanguage('de')">🇩🇪</option>
+                    <option value="es" (click)="useLanguage('es')" selected>🇪🇸</option>
+                </select>
             </li>
             <li class="nav-item">
-                <a class="btn bts" routerLink="/trabajos" role="button">Portafolio</a>
+                <a class="btn  bts" routerLink="/aboutme" role="button"> {{ 'intro.home' | translate:{'home': title} }}</a>
             </li>
             <li class="nav-item">
-                <a class="btn bts" routerLink="/contacto" role="button">Contacto</a>
+                <a class="btn bts" routerLink="/trabajos" role="button">{{ 'intro.portfolio' | translate:{'portfolio': title} }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn bts" routerLink="/contacto" role="button">{{ 'intro.contact' | translate:{'contact': title} }}</a>
             </li>
         </ul>
     </div>

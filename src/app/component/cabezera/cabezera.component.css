@@ -7,6 +7,20 @@
     width: 100%;
 }
 
+.sel{
+    font-size: 14pt;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;  
+    background-color: #21afcc;
+    border: none;
+    color: #fff;
+}
+
+.uk{
+    width: 50px;
+}
+
 .bts {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -82,6 +96,8 @@ mat-toolbar {
 .custom-icon {
     color: white;
 }
+
+
 
 @media(max-width: 959px) {
     mat-toolbar {

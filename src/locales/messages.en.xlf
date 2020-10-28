@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="e00fde81f1d8d3a8585bc2e03445dd63ceeb3b55" datatype="html">
+        <source>Español</source>
+        <target>Spanish</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/cabezera/cabezera.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78b105480912de559b89a5b07077ad1ffb918752" datatype="html">
+        <source> Inicio</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/cabezera/cabezera.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="174aaea03d030588ca02b67d9586685361215369" datatype="html">
+        <source>Contacto</source>
+        <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/cabezera/cabezera.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

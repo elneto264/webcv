@@ -9,6 +9,8 @@ import { DEFAULT_STATUS_VALUES, StepsData, StatusConfig } from './timeline-flow.
 })
 export class TimelineComponent {
 
+  title = 'portfolio';
+
   @Input() data: StepsData[] = [];
   @Input() statuses: StatusConfig[] = DEFAULT_STATUS_VALUES;
   @Input() topEdge = false;

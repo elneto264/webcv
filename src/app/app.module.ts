@@ -25,6 +25,20 @@ import { LayoutComponent } from './layout/layout.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavListComponent } from './component/sidenav-list/sidenav-list.component';
 import { MatCardModule } from "@angular/material/card";
+import { CovidTrackerComponent } from './component/covid-tracker/covid-tracker.component';
+import { MatTableModule } from '@angular/material/table';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableExporterModule } from 'mat-table-exporter';
+import { MatButtonModule } from '@angular/material/button';
+import { PostComponent } from './component/post/post.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+
 
 
 @NgModule({
@@ -43,6 +57,9 @@ import { MatCardModule } from "@angular/material/card";
     NotfoundComponent,
     LayoutComponent,
     SidenavListComponent,
+    CovidTrackerComponent,
+    PostComponent
+    
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
@@ -54,11 +71,30 @@ import { MatCardModule } from "@angular/material/card";
     TooltipModule,
     MaterialModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatTableExporterModule,
+    MatButtonModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader:{
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps:[HttpClient]
+      }
+    })
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+}
+
+export function HttpLoaderFactory(http: HttpClient){
+  return new TranslateHttpLoader(http);
 }

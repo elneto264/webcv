@@ -36,8 +36,8 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h2 class="card-title">Desarrollador web | Publicista </h2>
-                            <p class="card-text tcard">Un profesional del área de publicidad que se mueve al desarrollo web, siempre haciendo scroll hacia abajo o pasando páginas hacia la izquierda.</p>
+                            <h2 class="card-title">{{ 'intro.ctitle' | translate:{'ctitle': title} }} </h2>
+                            <p class="card-text tcard">{{ 'intro.subctitle' | translate:{'subctitle': title} }}</p>
                             <p class="card-text text-muted always">Always Beta!</p>
                         </div>
                     </div>
@@ -45,18 +45,15 @@
             </div>
         </div>
         <div class="col-xs-6 col-md-6 col-lg-6 introtext fade-in-right">
-            <h1>¡Hola!</h1>
-            <p> Mi nombre es Ernesto Silva Languasco. Estudié publicidad como carrera universitaria enfocado en la creación de contenido y estrategia de marketing.
-                <br><br>Desde hace un tiempo entré al mundo de la programación web, pues siempre me ha gustado la tecnología y la comunicación. El resultado es esta página. Aspiro a ser un programador <b>Full Stack</b>, ya que es un buen equilibrio para
-                poder ofrecer un buen servicio como profesional y además se manejar tanto el <b>Front-End</b> como el <b>Back-End</b>. Esto asegura que al momento de trabajar en un proyecto nuevo se aplique la mejor estrategia de diseño, desarrollo y difusión,
-                considerando las herramientas.
-            </p>
+            <h1>{{ 'hola.title' | translate:{'title': title} }}</h1>
+            <p> {{ 'intro.description.text1' | translate:{'description': title} }} </p><br>
+            <p> {{ 'intro.description.text2' | translate:{'description': title} }} </p>
         </div>
     </div>
     <hr>
     <div class="row filatime">
         <div class="col-xs-12 col-md-12 col-lg-12">
-            <h3 class="ptitulos">Experiencia Laboral</h3>
+            <h3 class="ptitulos">{{ 'job.jobexp' | translate:{'jobexp': title} }}</h3>
             <section class="bloques time">
                 <br>
                 <app-timeline  [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
@@ -66,12 +63,12 @@
             
             <section class="bloques fade-in">
                 <br>
-                <h3 class="ptitulos">Formación</h3>
+                <h3 class="ptitulos">{{ 'edu.eduexp' | translate:{'eduexp': title} }} </h3>
                 <app-formacion class="fade-in"></app-formacion>
             </section>
             <hr>
             <section class="bloquetec">
-                <h3 class="ptitulos">Dominio de Tecnologias</h3>
+                <h3 class="ptitulos">{{ 'tec.tecexp' | translate:{'tecexp': title} }} </h3>
                 <app-tecnologias class="fade-in"></app-tecnologias>
             </section>
 

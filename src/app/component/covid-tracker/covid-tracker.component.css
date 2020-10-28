@@ -1,0 +1,41 @@
+.congen{
+  margin-top: 5em;
+}
+
+.ptitulos{
+  font-family: 'Spartan', sans-serif;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}
+
+table {
+    width: 100%;
+  }
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.exportadores button{
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+
+.excel{
+  background-color: seagreen;
+  color: white;
+}
+
+.csv{
+  background-color:lightblue ;
+}
+
+.json{
+  background-color:lightpink;
+}
+
+.txt{
+  background-color: lightslategray;
+  color: white;
+}
