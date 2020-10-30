@@ -13,6 +13,10 @@ a:active {
     padding-left: 6px;
 }
 
+mat-nav-list{
+    position: fixed;
+}
+
 mat-nav-list a {
     color: black;
 }
