@@ -37,6 +37,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { PostComponent } from './component/post/post.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { FnadComponent } from './component/fnad/fnad.component';
 
 
 
@@ -58,7 +59,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     LayoutComponent,
     SidenavListComponent,
     CovidTrackerComponent,
-    PostComponent
+    PostComponent,
+    FnadComponent
     
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],

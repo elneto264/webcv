@@ -16,6 +16,7 @@
 .pintro{
   font-size: medium;
   text-align: center;
+  padding: 5px;
 }
 .fon {
     margin-top: 5em;
@@ -48,6 +49,16 @@
 img {
   width: 75%;
 }
+
+.fn{
+  margin-top:3.5em;
+  margin-left: 2.5em;
+}
+
+.fn img{
+  width: 60%;
+}
+
 i {
   opacity: 0;
   font-size: 18px;
@@ -322,6 +333,13 @@ h2 {
       width: 60%;
       margin-top:2em;
     }
+    .fn{
+      margin-top:3.5em;
+      margin-left: 2.5em;
+    }
+    .fn img{
+      width: 60%;
+    }
   }
 
   @media screen and (min-width: 315px) and (max-width: 425px) {
@@ -334,6 +352,14 @@ h2 {
       width: 40%;
       
     }
+
+    .fn{
+      margin-top:2.5em;
+      margin-left: 1.5em;
+    }
+    .fn img{
+      width: 30%;
+    }
   }
 
   @media screen and (min-width: 425px) and (max-width: 500px) {
@@ -345,6 +371,15 @@ h2 {
       width: 70%;
       
     }
+    .fn{
+      margin-top:3.5em;
+      margin-left: 2.5em;
+    }
+    .fn img{
+      width: 60%;
+    }
+
+    
   }
 
   @media screen and (min-width: 501px) and (max-width: 535px) {
@@ -356,6 +391,14 @@ h2 {
       width: 80%;
       
     }
+    .fn{
+      margin-top:3.5em;
+      margin-left: 2.5em;
+    }
+    .fn img{
+      width: 60%;
+    }
+
   }
 
   @media screen and (min-width: 536px) and (max-width: 600px) {
@@ -367,6 +410,14 @@ h2 {
       width: 82%;
       
     }
+    .fn{
+      margin-top:3.5em;
+      margin-left: 2.5em;
+    }
+    .fn img{
+      width: 60%;
+    }
+
   }
 
   @media screen and (min-width: 601px) and (max-width: 760px)  {
@@ -379,6 +430,14 @@ h2 {
       width: 75%;
       
     }
+    .fn{
+      margin-top:3.5em;
+      margin-left: 2.5em;
+    }
+    .fn img{
+      width: 60%;
+    }
+
   }
 
   @media screen and (min-width: 761px) and (max-width: 900px)  {
@@ -403,4 +462,12 @@ h2 {
       width: 70%;
       
     }
+    .fn{
+      margin-top:3.5em;
+      margin-left: 2.5em;
+    }
+    .fn img{
+      width: 60%;
+    }
+
   }

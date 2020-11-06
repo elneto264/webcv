@@ -1,0 +1,24 @@
+.ptitulos{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+.conpeg{
+    margin-top: 6em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.ltec {
+    margin: 5px;
+}
+
+.enlaces {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}

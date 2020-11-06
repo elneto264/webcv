@@ -9,6 +9,7 @@ import { ClimaComponent } from './component/clima/clima.component';
 import { RuletaComponent } from './component/ruleta/ruleta.component';
 import { PedagogicoComponent } from './component/pedagogico/pedagogico.component';
 import { PostComponent } from './component/post/post.component';
+import { FnadComponent } from './component/fnad/fnad.component';
 
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'trabajos', component: TrabajosComponent },
   { path: 'trabajos/covid', component: CovidTrackerComponent },
   { path: 'trabajos/clima', component: ClimaComponent },
+  { path: 'trabajos/fnad', component: FnadComponent },
   { path: 'trabajos/ruleta', component: RuletaComponent },
   { path: 'trabajos/django', component: PedagogicoComponent },
   { path: 'aboutme', component: AboutmeComponent },

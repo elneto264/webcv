@@ -99,7 +99,7 @@ function infogen() {
 
             },
             error: function() {
-                console.log("ERROR: de este lado");
+                // console.log("ERROR: de este lado");
             }
 
 
@@ -232,7 +232,7 @@ function infogen() {
 
             },
             error: function() {
-                console.log("ERROR:");
+                // console.log("ERROR:");
             }
 
         });
