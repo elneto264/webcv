@@ -1,0 +1,270 @@
+<section class="container-fluid primero">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12 intro">
+            <h1 class="util">Unethical</h1>
+
+            <p>{{ 'Unethical.intro' | translate:{'intro': title} }}
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid acordeon">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12 intro">
+
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{ 'index.con' | translate:{'con': title} }}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            {{ 'index.quick' | translate:{'quick': title} }}
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="qguide">
+                        <p>{{ 'index.cal' | translate:{'cal': title} }}</p>
+                        <mat-panel-description>
+                            {{ 'index.cal2' | translate:{'cal2': title} }}
+                        </mat-panel-description>
+                        <hr>
+                        <p>{{ 'index.peter' | translate:{'peter': title} }}</p>
+                        <mat-panel-description>
+                            {{ 'index.peter2' | translate:{'peter2': title} }}
+                        </mat-panel-description>
+                        <hr>
+                        <p>{{ 'index.api' | translate:{'api': title} }}</p>
+                        <mat-panel-description>
+                            {{ 'index.api2' | translate:{'api2': title} }}
+                        </mat-panel-description>
+                        <hr>
+                        <p>{{ 'index.webscra' | translate:{'webscra': title} }}</p>
+                        <mat-panel-description>
+                            {{ 'index.webscra2' | translate:{'webscra2': title} }}
+                        </mat-panel-description>
+                    </div>
+                </mat-expansion-panel>
+                <!-- calculator -->
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{ 'cal.textTi' | translate:{'textTi': title} }}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Currently {{panelOpenState ? 'showing' : ' not showing'}} the code
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <section class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-12 contenedor">
+
+
+                                <h3>{{ 'cal.text1' | translate:{'text1': title} }} </h3>
+                                <p>{{ 'cal.text2' | translate:{'text2': title} }} </p>
+                                <input id="expr" class="form-control" placeholder="Type here">
+                                <p>
+                                    <pre id="out"></pre>
+                                    <hr>
+
+                                    <article class="textdes">
+                                        <h3>{{ 'cal.text3' | translate:{'text3': title} }}</h3>
+                                        <p>{{ 'cal.text4' | translate:{'text4': title} }}
+                                            <a href="https://runestone.academy/runestone/books/published/pythonds/BasicDS/InfixPrefixandPostfixExpressions.html" class="fixinfo" target="_blank">{{ 'cal.text5' | translate:{'text5': title} }}</a>
+                                        </p>
+                                        <pre class="line-numbers"><code class="language-javascript">
+                                            {{ cal1 }} 
+                                        </code></pre>
+                                    </article>
+
+                                    <article class="textdes">
+                                        <p>{{ 'cal.text6' | translate:{'text6': title} }}</p>
+                                        <pre class="line-numbers"><code class="language-javascript">
+                                            {{ cal2 }} 
+                                        </code></pre>
+                                    </article>
+
+                                    <article class="textdes">
+                                        <p>{{ 'cal.text7' | translate:{'text7': title} }}</p>
+                                        <pre class="line-numbers"><code class="language-javascript">
+                                            {{ cal3 }} 
+                                        </code></pre>
+                                    </article>
+
+                                    <article class="textdes">
+                                        <p>{{ 'cal.text8' | translate:{'text8': title} }} <br>{{ 'cal.text8a' | translate:{'text8a': title} }} : `$ {{ '{' }}msg{{ '}' }} at ${{ '{' }}notation{{ '}' }}:\n${{ '{' }}expression{{ '}' }}\n${{ '{' }}' '.repeat(notation){{
+                                            '}' }}^`; .</p>
+                                        <pre class="line-numbers"><code class="language-javascript">
+                                            {{ cal4 }} 
+                                        </code></pre>
+                                    </article>
+
+                                    <article class="textdes">
+                                        <p>{{ 'cal.text9' | translate:{'text9': title} }} <a href="https://www.sitepoint.com/javascript-design-patterns-singleton/" class="fixinfo" target="_blank">{{ 'cal.text9a' | translate:{'text9a': title} }}</a> {{ 'cal.text9b'
+                                            | translate:{'text9b': title} }}</p>
+                                        <pre class="line-numbers"><code class="language-javascript">
+                                            {{ cal5 }} 
+                                        </code></pre>
+                                    </article>
+
+                                    <article class="textdes">
+                                        <p>{{ 'cal.text10' | translate:{'text10': title} }}: `${{ '{' }}expr{{ '}' }} should be ${{ '{' }}expected{{ '}' }}, but gives ${{ '{' }}result{{ '}' }}`); </p>
+                                        <pre class="line-numbers"><code class="language-javascript">
+                                            {{ cal6 }} 
+                                        </code></pre>
+                                    </article>
+
+                                    <article class="textdes">
+                                        <p>{{ 'cal.text11' | translate:{'text11': title} }}</p>
+                                        <pre class="line-numbers"><code class="language-css">
+                                            {{ cal7 }} 
+                                        </code></pre>
+                                        <br>
+                                        <p>{{ 'cal.text12' | translate:{'text12': title} }}</p>
+                                        <pre class="line-numbers"><code class="language-html">
+                                            {{ cal8 }} 
+                                        </code></pre>
+                                    </article>
+
+                            </div>
+                        </div>
+                    </section>
+                </mat-expansion-panel>
+                <!-- peter -->
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Peter meditation
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Currently {{panelOpenState ? 'showing' : ' not showing'}} the code
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <section class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-12 contenedor">
+
+                                <h3>Peter meditation </h3>
+
+                                <p>{{ 'peter.text1' | translate: {'text1': title} }}</p>
+                                <p>{{ 'peter.text1a' | translate: {'text1a': title} }}</p>
+                                <p>{{ 'peter.text1b' | translate: {'text1b': title} }}</p>
+                                <article class="textdes">
+                                    <p>{{ 'peter.text1c' | translate: {'text1c': title} }}</p>
+                                    <pre class="line-numbers"><code class="language-javascript">
+                                    {{ peter }} 
+                                </code></pre>
+                                    <p>{{ 'peter.text2' | translate: {'text2': title} }}</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </mat-expansion-panel>
+                <!-- API get -->
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Api Get
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Currently {{panelOpenState ? 'showing' : ' not showing'}} the code
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>{{ 'apig.text1' | translate: {'text1': title} }}</p>
+                    <section class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-12 contenedor">
+                                <article class="textdes">
+                                    <p>{{ 'apig.text2' | translate: {'text2': title} }}</p>
+                                    <p>{{ 'apig.text3' | translate: {'text3': title} }}.</p>
+                                    <p>{{ 'apig.text4' | translate: {'text4': title} }}</p>
+                                    <pre class="line-numbers"><code class="language-javascript">
+                                        {{ men1 }}
+                                    </code>
+                                    </pre>
+                                </article>
+                                <h3>{{ 'apig.text5' | translate: {'text5': title} }}</h3>
+                                <article class="textdes">
+                                    <p>{{ 'apig.text6' | translate: {'text6': title} }}</p>
+                                    <pre class="line-numbers"><code class="language-javascript">
+                                    {{ men2 }}
+                                </code>
+                                </pre>
+                                </article>
+                                <h3>{{ 'apig.text7' | translate: {'text7': title} }}</h3>
+                                <article class="textdes">
+                                    <p>{{ 'apig.text8' | translate: {'text8': title} }}.</p>
+                                    <pre class="line-numbers"><code class="language-javascript">
+                                    {{ men3 }}
+                                </code>
+                                </pre>
+                                </article>
+                                <article>
+                                    <p>{{ 'apig.text9' | translate: {'text9': title} }}</p>
+                                    <img src="./../../../assets/img/apifolderDir.jpg" class="imgapidir">
+                                    <h3>Deployment</h3>
+                                    <p>{{ 'apig.text10' | translate: {'text10': title} }} <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" target="_blank">{{ 'apig.text10a' | translate: {'text10a': title} }}</a>{{ 'apig.text10b'
+                                        | translate: {'text10b': title} }}</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </mat-expansion-panel>
+                <!-- basic webscrapper -->
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Basic webscrapper
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Currently {{panelOpenState ? 'showing' : ' not showing'}} the code
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <section class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-12 contenedor">
+                                <p>{{ 'bweb.text1' | translate: {'text1': title} }}</p>
+                                <article class="textdes">
+                                    <p>{{ 'bweb.text2' | translate: {'text2': title} }}</p>
+                                    <p>{{ 'bweb.text3' | translate: {'text3': title} }}</p>
+                                    <p>{{ 'bweb.text4' | translate: {'text4': title} }}</p>
+                                    <pre class="line-numbers"><code class="language-javascript">
+                                    {{ scrapper}}
+                                </code>
+                                </pre>
+                                </article>
+                                <article class="textdes">
+                                    <p>{{ 'bweb.text5' | translate: {'text5': title} }}</p>
+                                    <pre class="line-numbers"><code class="language-javascript">
+                                    {{ db }}
+                                </code>
+                                </pre>
+                                </article>
+                                <article class="textdes">
+                                    <p>{{ 'bweb.text6' | translate: {'text6': title} }}</p>
+                                    <pre class="line-numbers"><code class="language-javascript">
+                                        {{ indexscra }}
+                                    </code>
+                                    </pre>
+                                </article>
+                                <article class="textdes">
+                                    <p>{{ 'bweb.text7' | translate: {'text7': title} }}</p>
+                                    <pre class="line-numbers"><code class="language-html">
+                                        {{ htmlscraper }}
+                                    </code>
+                                    </pre>
+                                    <p>{{ 'bweb.text8' | translate: {'text8': title} }}</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript" src="assets/js/test.js"></script>

@@ -38,6 +38,10 @@ import { PostComponent } from './component/post/post.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FnadComponent } from './component/fnad/fnad.component';
+import { JobtestComponent } from './component/jobtest/jobtest.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
 
 
 
@@ -60,7 +64,8 @@ import { FnadComponent } from './component/fnad/fnad.component';
     SidenavListComponent,
     CovidTrackerComponent,
     PostComponent,
-    FnadComponent
+    FnadComponent,
+    JobtestComponent
     
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
@@ -82,6 +87,7 @@ import { FnadComponent } from './component/fnad/fnad.component';
     MatTableExporterModule,
     MatButtonModule,
     HttpClientModule,
+    MatExpansionModule,
     TranslateModule.forRoot({
       loader:{
         provide: TranslateLoader,
@@ -91,7 +97,8 @@ import { FnadComponent } from './component/fnad/fnad.component';
     })
 
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

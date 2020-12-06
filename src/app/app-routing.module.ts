@@ -10,6 +10,7 @@ import { RuletaComponent } from './component/ruleta/ruleta.component';
 import { PedagogicoComponent } from './component/pedagogico/pedagogico.component';
 import { PostComponent } from './component/post/post.component';
 import { FnadComponent } from './component/fnad/fnad.component';
+import { JobtestComponent } from './component/jobtest/jobtest.component';
 
 
 
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'trabajos/fnad', component: FnadComponent },
   { path: 'trabajos/ruleta', component: RuletaComponent },
   { path: 'trabajos/django', component: PedagogicoComponent },
+  { path: 'trabajos/unethical', component: JobtestComponent },
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'post', component: PostComponent },

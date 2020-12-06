@@ -32,7 +32,13 @@
                             "node_modules/jquery/dist/jquery.min.js",
                             "src/assets/js/moment.js",
                             "src/assets/js/sprint5.js",
-                            "src/assets/js/wheel.js"
+                            "src/assets/js/wheel.js",
+                            "src/assets/js/test.js"
+                        ],
+                        "allowedCommonJsDependencies": [
+                            "hammerjs",
+                            "file-saver",
+                            "xlsx"
                         ]
                     },
                     "configurations": {

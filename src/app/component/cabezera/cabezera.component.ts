@@ -16,14 +16,25 @@ export class CabezeraComponent implements OnInit {
   
   @Output() public sidenavToggle = new EventEmitter();
 
-  constructor( private translate: TranslateService) {
+  constructor( public translate: TranslateService) {
     translate.addLangs(['en','de','es']);
-    translate.setDefaultLang('es');
+    translate.setDefaultLang('en');
+
+
+    const chlang = translate.getBrowserLang();
+    translate.use(chlang.match(/en|de|es/) ? chlang: 'en' );
    }
 
-  useLanguage(language: string){
-    this.translate.use(language);
-  }
+  
+
+  // constructor( private translate: TranslateService) {
+  //   translate.addLangs(['en','de','es']);
+  //   translate.setDefaultLang('en');
+  //  }
+
+  // useLanguage(language: string){
+  //   this.translate.use(language);
+  // }
 
 
 

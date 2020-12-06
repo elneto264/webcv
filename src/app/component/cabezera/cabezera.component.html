@@ -25,12 +25,14 @@
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li class="nav-item">
-                <select class="custom-select sel" >
-                    <!-- <option selected>Lang</option> -->
-                    <option value="en" (click)="useLanguage('en')" >🇬🇧</option>
+                <select #langSelect (change)="translate.use(langSelect.value)" class="custom-select sel">
+                    <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+                  </select>
+                <!-- <select class="custom-select sel">
+                    <option value="en" (click)="useLanguage('en')" selected>🇬🇧</option>
                     <option value="de" (click)="useLanguage('de')">🇩🇪</option>
-                    <option value="es" (click)="useLanguage('es')" selected>🇪🇸</option>
-                </select>
+                    <option value="es" (click)="useLanguage('es')" >🇪🇸</option>
+                </select> -->
             </li>
             <li class="nav-item">
                 <a class="btn  bts" routerLink="/aboutme" role="button"> {{ 'intro.home' | translate:{'home': title} }}</a>

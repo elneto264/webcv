@@ -8,4 +8,8 @@
     <a mat-list-item routerLink="/contacto" (click)="onSidenavClose()">
         <mat-icon>contacts</mat-icon><span class="nav-caption">Contacto</span>
     </a>
+    <div>
+        <mat-icon class="licon">language</mat-icon><select mat-list-item #langSelect (change)="translate.use(langSelect.value)" class="custom-select sel">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang"> {{ lang }}</option>
+    </select></div>
 </mat-nav-list>
