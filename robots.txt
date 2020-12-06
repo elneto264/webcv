@@ -1,0 +1,10 @@
+User-agent: *
+Allow:/aboutme
+Allow:/trabajos
+Allow:/trabajos/covid
+Allow:/trabajos/clima
+Allow:/trabajos/django
+Allow:/trabajos/ruleta
+Allow:/trabajos/fnad
+Allow:/trabajos/unethical
+Allow:/contacto
