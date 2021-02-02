@@ -1,0 +1,12 @@
+User-agent: *
+Disallow:
+Allow:/aboutme
+Allow:/trabajos
+Allow:/trabajos/covid
+Allow:/trabajos/clima
+Allow:/trabajos/django
+Allow:/trabajos/ruleta
+Allow:/trabajos/fnad
+Allow:/trabajos/unethical
+Allow:/contacto
+Sitemap: https://ernestosilva.com/sitemap.xml

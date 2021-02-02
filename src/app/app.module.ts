@@ -70,7 +70,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,

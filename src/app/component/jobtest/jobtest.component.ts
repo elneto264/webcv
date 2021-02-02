@@ -8,12 +8,18 @@ import { SyntaxHighlightingService } from 'src/app/syntax-highlighting.service';
   templateUrl: './jobtest.component.html',
   styleUrls: ['./jobtest.component.css']
 })
+
+
+
+
 export class JobtestComponent implements OnInit, AfterViewChecked {
 
   blogPost: JobtestComponent;
   highlighted: boolean = false;
   panelOpenState = false;
-
+  
+  
+  
   title = 'portfolio';
   
   cal1= `
@@ -641,16 +647,15 @@ export class JobtestComponent implements OnInit, AfterViewChecked {
   }
 
  
-ch(){
-  pruebas.check();
-  
-}
+    ch(){
+        pruebas.check();
+    
+    }
 
-pet(){
-    peter.result();
-}
-
-  
+    pet(){
+        peter.result();
+    }
+ 
 
 
 }

@@ -1,12 +1,10 @@
-
-                        
 <div class="container fon">
     <div class="row">
-        <div class="col-xs-6 col-md-6 col-lg-6 textbox fade-in-left">
+        <div class="col-xs-6 col-md-6 col-lg-6 textbox ">
             <div class="descptxt" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="assets/img/grootside.png" class="card-img yoimg" alt="imagen personal">
+                        <img src="assets/img/ftperfilweb.jpg" class="card-img yoimg" alt="imagen personal">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -18,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-6 col-md-6 col-lg-6 introtext fade-in-right">
+        <div class="col-xs-6 col-md-6 col-lg-6 introtext ">
             <h1>{{ 'hola.title' | translate:{'title': title} }}</h1>
             <p> {{ 'intro.description.text1' | translate:{'description': title} }} </p><br>
             <p> {{ 'intro.description.text2' | translate:{'description': title} }} </p>
@@ -30,20 +28,20 @@
             <h3 class="ptitulos">{{ 'job.jobexp' | translate:{'jobexp': title} }}</h3>
             <section class="bloques time">
                 <br>
-                <app-timeline  [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
+                <app-timeline [data]="statusData" [statuses]="StatusValues" [topEdge]="true" [bottomEdge]="true" style="width: 400px0; float:right;">
                 </app-timeline>
             </section>
             <hr>
-            
-            <section class="bloques fade-in">
+
+            <section class="bloques ">
                 <br>
                 <h3 class="ptitulos">{{ 'edu.eduexp' | translate:{'eduexp': title} }} </h3>
-                <app-formacion class="fade-in"></app-formacion>
+                <app-formacion></app-formacion>
             </section>
             <hr>
             <section class="bloquetec">
                 <h3 class="ptitulos">{{ 'tec.tecexp' | translate:{'tecexp': title} }} </h3>
-                <app-tecnologias class="fade-in"></app-tecnologias>
+                <app-tecnologias></app-tecnologias>
             </section>
 
         </div>
@@ -57,24 +55,24 @@
 
 
 <script>
-    $(window).scroll(function () {
+    $(window).scroll(function() {
 
-/* Check the location of each desired element */
-$('.fade-in').each(function (i) {
+        /* Check the location of each desired element */
+        $('.fade-in').each(function(i) {
 
-var bottom_of_object = $(this).position().top + $(this).outerHeight();
-var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-/* If the object is completely visible in the window, fade it it */
-if (bottom_of_window > bottom_of_object) {
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object) {
 
-    $(this).animate({
-        'opacity': '1'
-    }, 500);
+                $(this).animate({
+                    'opacity': '1'
+                }, 500);
 
-}
+            }
 
-});
+        });
 
-});
+    });
 </script>

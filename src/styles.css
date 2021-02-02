@@ -5,7 +5,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import "~prismjs/plugins/toolbar/prism-toolbar.css";
-@import "~prismjs/themes/prism-okaidia";
+@import '~prismjs/themes/prism.css';
 html,
 body {
     height: 100%;

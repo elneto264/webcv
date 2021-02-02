@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { StepsData, StatusConfig } from './component/timeline/timeline-flow.options';
 import {
   transition,
@@ -44,9 +45,41 @@ import { Router, NavigationEnd } from '@angular/router';
     ])
   ],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio';
 
-
+constructor(private meta: Meta,private titleService: Title) {}
+ngOnInit(): void {
+    this.titleService.setTitle('Ernesto Silva Web Developer');
+    this.meta.addTag({
+      name: 'author',
+      content: 'ernesto silva'
+    });
+    this.meta.addTag({
+      name: 'robots',
+      content: 'index, follow'
+    });
+    this.meta.addTag({
+      name: 'keywords',
+      content: 'desarrollador, maquetador, programador'
+    });
+    this.meta.addTag({
+      name: 'keywords',
+      content: 'Madrid'
+    });
+    this.meta.addTag({
+      name: 'keywords',
+      content: 'front end, back end, full stack'
+    });
+    this.meta.addTag({
+      name: 'keywords',
+      content: 'Ernesto, Silva, Languasco'
+    });
+    this.meta.updateTag({
+        name: 'description',
+        content: 'Full Stack developer based in Madrid' +
+          ' Junior web developer'
+      });
+  }
 
 }

@@ -11,6 +11,7 @@ import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';
 import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-typescript';
+import 'prismjs/components/prism-php';
 
 declare let Prism: any;
 
@@ -29,4 +30,6 @@ export class SyntaxHighlightingService {
     }
 
   }
+
+  
 }
