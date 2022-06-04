@@ -6,10 +6,13 @@ import { StepsData, StatusConfig } from '../timeline/timeline-flow.options';
 
 
 
+
+
 @Component({
   selector: 'app-aboutme',
   templateUrl: './aboutme.component.html',
-  styleUrls: ['./aboutme.component.css']
+  styleUrls: ['./aboutme.component.css'],
+
 })
 export class AboutmeComponent implements OnInit {
 
@@ -94,7 +97,9 @@ export class AboutmeComponent implements OnInit {
       this.masinfo = false;
     }
   }
+  
   ngOnInit(): void {
+    
   }
 
 }

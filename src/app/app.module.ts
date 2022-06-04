@@ -40,6 +40,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FnadComponent } from './component/fnad/fnad.component';
 import { JobtestComponent } from './component/jobtest/jobtest.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { ModalCookieComponent } from './component/modal-cookie/modal-cookie.component';
+
+
 
 
 
@@ -65,7 +68,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     CovidTrackerComponent,
     PostComponent,
     FnadComponent,
-    JobtestComponent
+    JobtestComponent,
+    ModalCookieComponent
+    
     
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
