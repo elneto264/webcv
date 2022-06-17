@@ -14,7 +14,7 @@ export const DEFAULT_STATUS_VALUES: StatusConfig[] = [{
     styles?: StatusConfigStyles;
   }
    
-  interface StatusConfigStyles {
+  interface StatusConfigStyles { 
     pipeColor?: string;
     textColor?: string;
     iconClass?: string;
